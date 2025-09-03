@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraRebel Perfumes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 15px 50px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f4c2c2;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('https://t4.ftcdn.net/jpg/05/63/62/37/360_F_563623744_3BhTfOKCo66ixYTHrsBbLOcSJgcJbUNM.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 30px;
+      border: none;
+      background: #f4c2c2;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e89b9b;
+    }
+
+    /* About */
+    .about {
+      padding: 80px 20px;
+      text-align: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    /* Collection */
+    .collection {
+      padding: 80px 20px;
+      background: #f9f9f9;
+    }
+
+    .collection h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    .testimonial {
+      max-width: 700px;
+      margin: 20px auto;
+      font-style: italic;
+      color: #555;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 80px 20px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      background: #f4c2c2;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e89b9b;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>AuraRebel</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#collection">Collection</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div>
+      <h2>Unleash Your Aura</h2>
+      <p>Discover the art of fragrance with AuraRebel perfumes.</p>
+      <a href="#collection" class="btn">Explore Collection</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>AuraRebel is dedicated to crafting exquisite perfumes that embody elegance, style, and confidence. Every fragrance tells a story, designed to enhance your personality and leave a lasting impression.</p>
+  </section>
+
+  <!-- Collection -->
+  <section class="collection" id="collection">
+    <h2>Our Collection</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://perfumeonline.pk/cdn/shop/products/3562700373145_1024x1024.jpg?v=1706783316" alt="Perfume 1">
+        <h3>Jaguar Black</h3>
+        <p>A floral fragrance with a hint of mystery.</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0RHXOhD1CDNHqtfBIWZv_5kfXcGphlQewCQ&s" alt="Perfume 2">
+        <h3>Calvin Klein</h3>
+        <p>Fresh, aquatic notes for everyday wear.</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh5JqwsQ_ZMpHTxe9a4BUJq629UCeMTwtsCQ&s" alt="Perfume 3">
+        <h3>Golden Oud</h3>
+        <p>Rich and luxurious, perfect for evenings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <p class="testimonial">"AuraRebel perfumes are simply divine. The scent lasts all day and I always get compliments!" – Sarah M.</p>
+    <p class="testimonial">"Golden Oud is my new signature fragrance. Elegant and powerful!" – James L.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AuraRebel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
